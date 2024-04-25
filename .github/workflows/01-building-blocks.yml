@@ -9,9 +9,9 @@ jobs:
     echo-good-buy:
         runs-on: ubantu-latest
         steps: 
-            - name: Fail Step
+            - name: FSuccessful Step
               run: |
                 echo "I will fail"
-                exit 1
+                exit 0
             - name: say goodbye
               run: echo "I say Goodbye"
