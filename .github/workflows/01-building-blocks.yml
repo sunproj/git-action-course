@@ -1,0 +1,17 @@
+name: 01-building-blocks
+on: push
+jobs:
+    echo-hello:
+        runs-on: ubantu-latest
+        steps: 
+            - name: Say Hello
+              run: Hello World
+    echo-good-buy:
+        runs-on: ubantu-latest
+        steps: 
+            - name: Fail Step
+              run: |
+                echo "I will fail"
+                exit 1
+            - name: say goodbye
+              run: echo "I say Goodbye"
